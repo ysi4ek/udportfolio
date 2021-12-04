@@ -418,6 +418,19 @@ var resizePizzas = function(size) {
         console.log("bug in changeSliderLabel");
     }
   }
+  
+  function sizeSwitcher (size) {
+	switch(size) {
+	  case "1":
+		return 0.25;
+	  case "2":
+		return 0.3333;
+	  case "3":
+		return 0.5;
+	  default:
+		console.log("bug in sizeSwitcher");
+	}
+  }
 
   changeSliderLabel(size);
 
