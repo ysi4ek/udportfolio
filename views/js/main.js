@@ -490,9 +490,9 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
-  var scrollTopFraction = document.body.scrollTop / 1250; 
+  var scrollTop = document.body.scrollTop / 1250; 
   for (var i = 0; i < PIZZA_COUNT; i++) {
-    var scaledPhase = Math.sin(scrollTopFraction + (i % 5)) * 100;
+    var scaledPhase = Math.sin(scrollTop + (i % 5)) * 100;
     items[i].style.left = items[i].basicLeft + scaledPhase + 'px';
   }
 
